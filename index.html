@@ -13,7 +13,9 @@
 
 <nav class="navbar">
   <div class="nav-container">
-
+<div class="menu-toggle" id="menuToggle">
+  ☰
+</div>
     <div class="logo-text">
   <span class="logo-main">By Self-truth...</span>
   <span class="logo-tagline">Unlock your inner voice</span>
@@ -21,12 +23,10 @@
 
 
     <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html" class="active">Home</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="services.html">Services</a></li>
       <li><a href="sessions.html">Sessions</a></li>
-      <li><a href="team.html">Our Team</a></li>
-      <li><a href="testimonials.html">Testimonials</a></li>
       <li><a href="pricing.html">Pricing</a></li>
       <li><a href="contact.html" class="nav-btn">Contact</a></li>
     </ul>
@@ -35,7 +35,7 @@
 </nav>
 
 <!-- ================= HERO SECTION ================= -->
-<section class="split-section hero-home">
+<section class="split-section hero-home reveal">
   <div class="content-box">
     <h1 class="animated-heading">
       Transform Your Life<br>
@@ -58,7 +58,10 @@
   </div>
 
   <div class="image-box">
-    <img src="images/hero.jpg" alt="Motivational Speaker">
+    <div class="image-box slider">
+  <img src="images/session5.jpeg" class="slide active">
+  <img src="images/session1.jpg" class="slide">
+  <img src="images/hero.jpg" class="slide">
   </div>
 </section>
 <!-- ================= OUR JOURNEY ================= -->
@@ -78,31 +81,38 @@
       we guide you step by step.
     </p>
 
-    <a href="#services" class="btn-primary">Explore Our Services</a>
+    <a href="services.html" class="btn-primary">Explore Our Services</a>
   </div>
 
   <div class="image-box">
-    <img src="images/session1.jpg" alt="Our Journey">
+    <img src="images/session25.webp" class="slide">
+    <img src="images/session17.jpg" alt="Our Journey">
   </div>
 </section>
-
 <!-- ================= OUR SERVICES ================= -->
 <section class="home-section services-section split-services">
 
   <div class="services-left">
-    <h2 class="section-title">How We Help You Transform</h2>
+    <h2 class="section-title animated-heading">How We Help You Transform</h2>
+
     <p class="section-subtitle">
-      Real change begins when clarity meets right guidance.
-      We don’t just motivate — we transform lives, careers
-      and businesses with purpose-driven support.
+      Transformation is not motivation for one day.
+      It is a guided journey of clarity, mindset shift
+      and consistent action.
     </p>
-    <p class="highlight-line">
-  Our approach blends mindset correction, practical action
-  and continuous support — so transformation is real, not temporary.
-</p>
 
+    <ul class="service-points">
+      <li>✔ Clear confusion & overthinking</li>
+      <li>✔ Build confidence & emotional strength</li>
+      <li>✔ Career & business clarity</li>
+      <li>✔ Stress-free decision making</li>
+      <li>✔ Long-term personal growth</li>
+    </ul>
 
-    <img src="images/session1.jpg" alt="Life Coaching Session">
+    <div class="services-images">
+      <img src="images/session35.webp" alt="">
+      <img src="images/session24.webp" alt="">
+    </div>
   </div>
 
   <div class="services-right">
@@ -110,61 +120,53 @@
 
       <div class="service-card">
         <h3>Life Clarity & Direction</h3>
-        <p>
-          Overcome confusion, gain clarity and move forward
-          with confidence and purpose.
-        </p>
+        <p>Remove confusion and move forward with purpose.</p>
       </div>
 
       <div class="service-card">
         <h3>Career Growth Guidance</h3>
-        <p>
-          Choose the right career path, reduce stress
-          and grow professionally with confidence.
-        </p>
+        <p>Right career path, confidence and growth planning.</p>
       </div>
 
       <div class="service-card">
         <h3>Stress & Mindset Coaching</h3>
-        <p>
-          Build a calm, focused and positive mindset
-          for a stress-free and balanced life.
-        </p>
+        <p>Calm, focused and emotionally strong mindset.</p>
       </div>
 
       <div class="service-card">
         <h3>Relationship Healing</h3>
-        <p>
-          Improve emotional understanding, communication
-          and strengthen personal relationships.
-        </p>
+        <p>Better understanding and emotional balance.</p>
       </div>
 
       <div class="service-card">
         <h3>Student Counseling</h3>
-        <p>
-          Clear career confusion, exam stress
-          and build confidence for the future.
-        </p>
+        <p>Career clarity and confidence for students.</p>
       </div>
 
       <div class="service-card">
         <h3>Business Growth Support</h3>
-        <p>
-          Improve decision-making, leadership mindset
-          and sustainable business growth.
-        </p>
+        <p>Leadership clarity and sustainable growth.</p>
       </div>
 
     </div>
   </div>
 
 </section>
+
+<!-- ================= TRUST STRIP ================= -->
+<section class="home-section gray">
+  <h2>Your Growth & Privacy Is Our Highest Priority</h2>
+  <p>
+    Every conversation, every session and every emotion you share
+    with us is treated with complete respect and confidentiality.
+    We don’t judge. We listen, understand and guide.
+  </p>
+</section>
 <!-- ================= SESSIONS ================= -->
 <section class="home-section split-sessions">
 
   <div class="sessions-left">
-    <h2 class="section-title">Our Training Sessions by selftruth</h2>
+    <h2 class="section-title">Our Training Sessions by SelfTruth...</h2>
     <p class="section-subtitle">
       Every transformation starts with understanding.
       Our sessions are designed to bring clarity,
@@ -173,14 +175,14 @@
     </p>
 
     <div class="free-highlight">
-      <strong>🎁 First 3 Sessions are FREE</strong>
+      <strong>🎁 First Sessions is FREE</strong>
       <p>
         Begin your journey without pressure.
         Experience our guidance before you commit.
       </p>
     </div>
 
-    <img src="images/session1.jpg" alt="Coaching Session">
+    <img src="images/session9.jpg" alt="Coaching Session">
   </div>
 
   <div class="sessions-right">
@@ -221,6 +223,16 @@
     </div>
   </div>
 
+</section>
+<!-- ================= GLOBAL IMPACT ================= -->
+<section class="home-section gray">
+  <h2>Trusted Across Locations & Backgrounds</h2>
+  <p>
+    Our guidance has supported individuals,
+    professionals and organizations across India
+    and internationally through online sessions,
+    workshops and personal mentoring.
+  </p>
 </section>
 
 <!-- ================= OUR TEAM ================= -->
@@ -264,19 +276,22 @@
 </section>
 
 <!-- ================= FOUNDER SECTION ================= -->
-<section class="founder-section">
+<!-- ===== NEW MODERN FOUNDER SECTION ===== -->
+<section class="founder-modern">
 
-  <div class="founder-container">
+  <div class="founder-modern-container">
 
-    <div class="founder-image">
-      <img src="images/session27.jpeg" alt="Soyam Shah - Founder of Self Truth">
+    <!-- IMAGE -->
+    <div class="founder-modern-image">
+      <img src="images/session27.jpeg" alt="Sanju Shah – Founder of Self Truth">
     </div>
 
-    <div class="founder-content">
-      <h2 class="animated-heading">The Vision Behind Self Truth</h2>
+    <!-- CONTENT -->
+    <div class="founder-modern-content">
+      <h2 class="founder-title">The Vision Behind Self Truth</h2>
 
-      <h3>Sanju Shah</h3>
-      <span>Founder of Self Truth</span>
+      <h3 class="founder-name">Sanju Shah</h3>
+      <p class="founder-role highlight-role">Founder of Self Truth</p>
 
       <p>
         Self Truth was founded with a simple yet powerful vision —
@@ -285,15 +300,158 @@
       </p>
 
       <p>
-        Our approach goes beyond motivation. We focus on deep clarity,
+        We go beyond surface motivation. Our work focuses on deep clarity,
         mindset correction, emotional strength and practical guidance
-        that leads to real transformation in life, career and business.
+        that creates real transformation in life, career and business.
       </p>
     </div>
 
   </div>
 
 </section>
+
+<!-- ================= DETAILED FEEDBACK SECTION ================= -->
+<section class="home-section feedback-section">
+
+  <h2 class="section-title animated-heading">
+    Real Voices. Real Experiences.
+  </h2>
+
+  <p class="section-subtitle">
+    These are not one-line reviews.
+    These are real stories shared by people
+    who experienced clarity, confidence
+    and inner transformation with Self Truth.
+  </p>
+
+  <div class="feedback-grid">
+
+    <!-- INDIA FEEDBACK -->
+    <div class="feedback-card reveal">
+      <div class="feedback-profile">
+        <img src="images/client3.png" alt="Client from India">
+        <div>
+          <h4>Vanshika Tiwari</h4>
+          <span>Gurugram,India · Working Professional</span>
+        </div>
+      </div>
+
+      <p class="feedback-text">
+        I came to Self Truth Planet during a phase where I was
+        completely confused about my career and personal life.
+        The sessions were not motivational speeches —
+        they were deep conversations that helped me understand
+        my own thoughts, fears and patterns.
+        Today I feel emotionally stronger, clearer in decisions
+        and more confident in handling life challenges.
+      </p>
+    </div>
+
+    <!-- FOREIGN FEEDBACK -->
+    <div class="feedback-card reveal">
+      <div class="feedback-profile">
+        <img src="images/client15.png" alt="Client from Abroad">
+        <div>
+          <h4>Phillipe Carter</h4>
+          <span>Canada · Entrepreneur</span>
+        </div>
+      </div>
+
+      <p class="feedback-text">
+        Even though I was in a different country,
+        the online sessions felt deeply personal and connected.
+        The guidance helped me manage stress,
+        improve clarity in business decisions
+        and reconnect with my inner confidence.
+        It was practical, honest and emotionally grounding.
+      </p>
+    </div>
+
+    <!-- INDIA FEEDBACK -->
+    <div class="feedback-card reveal">
+      <div class="feedback-profile">
+        <img src="images/client8.jpeg" alt="Client from India">
+        <div>
+          <h4>Shruti Agrawal</h4>
+          <span>Jabalpur,India · Student</span>
+        </div>
+      </div>
+
+      <p class="feedback-text">
+        As a student, I was under pressure from studies,
+        expectations and self-doubt.
+        These sessions helped me calm my mind,
+        gain clarity about my goals
+        and build confidence step by step.
+        I now feel emotionally balanced and focused.
+      </p>
+    </div>
+
+    <!-- FOREIGN FEEDBACK -->
+    <div class="feedback-card reveal">
+      <div class="feedback-profile">
+        <img src="images/client19.png" alt="Client from Abroad">
+        <div>
+          <h4>Alok Yadav</h4>
+          <span> ·Siwan, India. Job-Pvt</span>
+        </div>
+      </div>
+
+      <p class="feedback-text">
+        Working with you has been the best investment I’ve made for my well-being.
+        I came to you exhausted by chronic stress and deeply lost in a maze of mental confusion. 
+        Your coaching style is the perfect balance of empathy and accountability.
+        you challenged me to face my fears while giving me the support I needed to overcome them.
+        The 'weight' I was carrying has been replaced by a deep sense of inner peace.
+        I am now more resilient to life’s challenges, more intentional with my time,
+        and much clearer about my future path. You haven’t just helped me manage my anxiety.
+        you’ve helped me reclaim my life. Thanks you
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ================= IMPACT STATS ================= -->
+<!-- ================= IMPACT / HAPPY CLIENTS ================= -->
+<section class="home-section impact-section">
+
+  <h2 class="section-title animated-heading">
+    Our Impact Speaks for Itself
+  </h2>
+
+  <p class="section-subtitle">
+    Over the years, we have helped individuals, students,
+    professionals and business owners across India and
+    different countries find clarity, confidence and direction.
+  </p>
+
+  <div class="impact-grid">
+
+    <div class="impact-box">
+      <span class="counter" data-target="64">0</span>
+      <p>Happy Clients</p>
+    </div>
+
+    <div class="impact-box">
+      <span class="counter" data-target="6">0</span>
+      <p>Countries Reached</p>
+    </div>
+
+    <div class="impact-box">
+      <span class="counter" data-target="38">0</span>
+      <p>Workshops & Sessions</p>
+    </div>
+
+    <div class="impact-box">
+      <span class="counter" data-target="98">0</span>
+      <p>% Satisfaction Rate</p>
+    </div>
+
+  </div>
+</section>
+
 
 <!-- ================= TESTIMONIALS ================= -->
 <section class="home-section split-testimonials">
@@ -339,6 +497,17 @@
   </div>
 
 </section>
+<section class="home-section gallery">
+  <h2 class="section-title">Moments of Transformation</h2>
+
+  <div class="gallery-grid">
+    <img src="images/session8.webp">
+    <img src="images/session14.jpg">
+    <img src="images/session26.jpg">
+    <img src="images/session19.jpg">
+  </div>
+</section>
+
 <!-- ================= WORKSHOPS ================= -->
 <section class="home-section split-workshops gray">
 
@@ -366,7 +535,7 @@
     <div class="workshop-grid">
 
       <div class="workshop-card">
-        <img src="images/session1.jpg" alt="Life Workshop">
+        <img src="images/session32.jpeg" alt="Life Workshop">
         <h3>Life Transformation Workshop</h3>
         <p>
           Helping individuals break confusion,
@@ -375,7 +544,7 @@
       </div>
 
       <div class="workshop-card">
-        <img src="images/session2.jpg" alt="Career Workshop">
+        <img src="images/session39.jpg" alt="Career Workshop">
         <h3>Career & Student Workshop</h3>
         <p>
           Career clarity, mindset building
@@ -459,11 +628,108 @@
   </p>
   <a href="contact.html" class="btn">Start Your Journey</a>
 </section>
+<script>
+const counter = document.querySelectorAll('.counter');
+let started = false;
+
+window.addEventListener('scroll', () => {
+  const section = document.querySelector('.impact-section');
+  const sectionTop = section.getBoundingClientRect().top;
+  const windowHeight = window.innerHeight;
+
+  if (!started && sectionTop < windowHeight - 100) {
+    counters.forEach(counter => {
+      const target = +counter.getAttribute('data-target');
+      let count = 0;
+      const speed = target / 100;
+
+      const updateCount = () => {
+        if (count < target) {
+          count += speed;
+          counter.innerText = Math.ceil(count);
+          setTimeout(updateCount, 30);
+        } else {
+          counter.innerText = target;
+        }
+      };
+
+      updateCount();
+    });
+    started = true;
+  }
+});
+</script>
 
 <!-- ================= FOOTER ================= -->
 <footer class="footer">
   <p>© 2026 Self Truth Planet | All Rights Reserved</p>
 </footer>
+<script>
+const reveals = document.querySelectorAll(".reveal");
+
+window.addEventListener("scroll", () => {
+  reveals.forEach(el => {
+    const top = el.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+
+    if (top < windowHeight - 100) {
+      el.classList.add("active");
+    }
+  });
+});
+</script>
+<script>
+  const toggle = document.getElementById("menuToggle");
+  const nav = document.querySelector(".nav-links");
+
+  toggle.addEventListener("click", () => {
+    nav.classList.toggle("active");
+  });
+</script>
+<script>
+let slides = document.querySelectorAll(".slide");
+let index = 0;
+
+setInterval(() => {
+  slides[index].classList.remove("active");
+  index = (index + 1) % slides.length;
+  slides[index].classList.add("active");
+}, 3000);
+</script>
+
+<script>
+const counters = document.querySelectorAll(".counter");
+
+const runCounter = () => {
+  counters.forEach(counter => {
+    const target = +counter.dataset.target;
+    let count = 0;
+
+    const update = () => {
+      const inc = target / 80;
+      if (count < target) {
+        count += inc;
+        counter.innerText = Math.ceil(count);
+        setTimeout(update, 20);
+      } else {
+        counter.innerText = target;
+      }
+    };
+    update();
+  });
+};
+
+const impactSection = document.querySelector(".impact-section");
+
+const observer = new IntersectionObserver(entries => {
+  if (entries[0].isIntersecting) {
+    runCounter();
+    observer.disconnect();
+  }
+}, { threshold: 0.4 });
+
+observer.observe(impactSection);
+</script>
 
 </body>
 </html>

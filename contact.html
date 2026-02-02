@@ -4,16 +4,22 @@
   <meta charset="UTF-8">
   <title>Contact Us | Self Truth Planet</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Main CSS -->
   <link rel="stylesheet" href="css/style.css">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
 
+<!-- ===== NAVBAR (FIXED) ===== -->
 <nav class="navbar">
   <div class="nav-container">
 
     <div class="logo">
-     By Self Truth... <span>
+      By Self Truth...
     </div>
 
     <ul class="nav-links">
@@ -21,20 +27,19 @@
       <li><a href="about.html">About</a></li>
       <li><a href="services.html">Services</a></li>
       <li><a href="sessions.html">Sessions</a></li>
-      <li><a href="team.html">Our Team</a></li>
-      <li><a href="testimonials.html">Testimonials</a></li>
       <li><a href="pricing.html">Pricing</a></li>
       <li><a href="contact.html" class="nav-btn">Contact</a></li>
     </ul>
 
   </div>
 </nav>
+
 <!-- ===== HERO ===== -->
 <section class="contact-hero">
   <h1>Let’s Talk About Your Life & Growth</h1>
   <p>
     Our team is here to listen, understand and guide you —  
-    starting with 3 free clarity sessions.
+    starting with your first free clarity session.
   </p>
 </section>
 
@@ -52,33 +57,49 @@
     </p>
 
     <ul class="contact-points">
-      <li>✔ First 3 Sessions – FREE</li>
-      <li>✔ Online & Confidential</li>
-      <li>✔ Practical & Honest Guidance</li>
-      <li>✔ Life, Career & Business Support</li>
+      <li><i class="fa-solid fa-circle-check"></i> First Session – FREE</li>
+      <li><i class="fa-solid fa-lock"></i> Online & Confidential</li>
+      <li><i class="fa-solid fa-brain"></i> Practical & Honest Guidance</li>
+      <li><i class="fa-solid fa-hand-holding-heart"></i> Life, Career & Business Support</li>
     </ul>
 
     <div class="contact-buttons">
-      <a href="https://wa.me/91XXXXXXXXXX" target="_blank" class="btn whatsapp">
-        Chat on WhatsApp
+      <a href="https://wa.me/918440043331?text=Hello%20I%20want%20to%20book%20a%20free%20clarity%20session" 
+   target="_blank" 
+   class="btn whatsapp">
+
+        <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
       </a>
 
-      <a href="tel:+91XXXXXXXXXX" class="btn call">
-        Call Our Team
+      <a href="tel:+918440043331" class="btn call">
+        <i class="fa-solid fa-phone"></i> Call Our Team
       </a>
     </div>
   </div>
 
   <!-- RIGHT FORM -->
   <div class="contact-form-box">
-    <h2>Book Your Free Sessions</h2>
+    <h2>Book Your Free Session</h2>
 
-    <form class="contact-form">
-      <input type="text" placeholder="Your Full Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <input type="tel" placeholder="Phone / WhatsApp Number" required>
+    <div class="contact-image">
+      <img src="images/session12.png" alt="Support Team">
+    </div>
 
-      <select required>
+    <!-- WORKING FORM -->
+    <form
+      class="contact-form"
+      action="https://formsubmit.co/truth.town9@gmail.com"
+      method="POST"
+    >
+      <!-- FormSubmit settings -->
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_subject" value="New Contact Request - Self Truth Planet">
+
+      <input type="text" name="name" placeholder="Your Full Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <input type="tel" name="phone" placeholder="Phone / WhatsApp Number" required>
+
+      <select name="concern" required>
         <option value="">Select Your Concern</option>
         <option>Life Confusion / Stress</option>
         <option>Career / Job Growth</option>
@@ -87,38 +108,118 @@
         <option>Student Counseling</option>
       </select>
 
-      <textarea placeholder="Briefly describe your concern"></textarea>
+      <textarea name="message" placeholder="Briefly describe your concern"></textarea>
 
       <button type="submit" class="btn submit-btn">
-        Request Free Sessions
+        Request Free Session
       </button>
     </form>
   </div>
 
 </section>
-
-<!-- ===== TRUST MESSAGE ===== -->
-<section class="home-section gray">
-  <h2>Your Privacy Matters</h2>
-  <p>
-    Every conversation with our team is completely confidential.
-    We respect your emotions, time and trust.
-  </p>
+<p class="privacy-note">
+  <i class="fa-solid fa-shield-halved"></i>
+  Your privacy is our highest priority.  
+  All calls, chats and sessions are 100% confidential.
+</p>
+<section class="privacy-section">
+  <div class="privacy-box">
+    <i class="fa-solid fa-shield-halved"></i>
+    <h3>Your Privacy Is Most Important For Us</h3>
+    <p>
+      Every call, WhatsApp chat, email and session is handled with complete
+      confidentiality. We never share your personal details with anyone.
+      Your trust is our responsibility, and your comfort comes first.
+    </p>
+  </div>
 </section>
 
-<!-- ===== CTA ===== -->
-<section class="home-section cta">
-  <h2>Take the First Step Today</h2>
-  <p>
-    Clarity begins with a conversation.  
-    Let our team guide you towards a better life.
+<!-- ===== TESTIMONIALS SPLIT SECTION ===== -->
+<section class="testimonial-split">
+
+  <h2 class="section-title">What People Say About Us</h2>
+  <p class="section-subtitle">
+    Trusted by individuals across India and around the world
   </p>
-  <a href="pricing.html" class="btn">View Our Plans</a>
+
+  <div class="testimonial-grid">
+
+    <!-- ===== INDIAN TESTIMONIALS ===== -->
+    <div class="testimonial-column">
+      <h3>From India 🇮🇳</h3>
+
+      <div class="testimonial-card">
+        <img src="images/client18.png" alt="Client India">
+        <div>
+          <p>
+            “You helped me declutter the mental noise.  
+      I finally feel like I can breathe again and focus on what actually matters,
+      rather than what’s just loud.
+      thanks selftruth team for giving me this avesome change toword happiness.”
+          </p>
+          <span>— Vaibhav Khare, Indore</span>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <img src="images/client20.jpeg" alt="Client India">
+        <div>
+          <p>
+             “Before we started, my home life felt like a constant battleground of stress and misunderstanding.  
+      I felt unheard and exhausted. I joined your program just to try one last thing,
+      and I am so glad I did. You helped me find the clarity to set healthy boundaries and
+      communicate with kindness rather than anger.Everything in my life is finally falling into place.
+      The tension in my house has vanished, and there is a sense of peace here that I haven't felt in
+      very long time. Thank you for showing me that a happy, healthy relationship is actually possible
+      for me."
+          </p>
+          <span>— Arunima Gupta, Jaipur</span>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <img src="images/client7.jpeg" alt="Client India">
+        <div>
+          <p>
+            “I initially connected with you just to see how it goes, but I am amazed by the results.  
+      I’ve realized how much this has benefited me—everything in my life is finally falling into place,
+      and my stress has completely vanished.Thank you for this transformation.”
+          </p>
+          <span>— Fatima Khan, Delhi</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== FOREIGN TESTIMONIALS ===== -->
+    <div class="testimonial-column">
+      <h3>From Around the World 🌍</h3>
+
+      <div class="testimonial-card">
+        <img src="images/client13.png" alt="Client USA">
+        <div>
+          <p>
+            The sessions helped me realign my mindset and goals.
+            Truly a life-changing experience.
+          </p>
+          <span>— Jamesh Ulhaq, Australia</span>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <img src="images/client21.webp" alt="Client UK">
+        <div>
+          <p>
+            Very practical, warm and professional guidance.
+            Highly recommended for clarity seekers.
+          </p>
+          <span>— Selden Dasho, Thimphu- Bhutan</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
 </section>
 
 <footer class="footer">
   <p>© 2026 Self Truth Planet | All Rights Reserved</p>
 </footer>
-
-</body>
-</html>
