@@ -18,17 +18,25 @@
 <nav class="navbar">
   <div class="nav-container">
 
-    <div class="logo">
-      By Self Truth...
+    <!-- MOBILE MENU ICON -->
+    <div class="menu-toggle" id="menuToggle">
+      ☰
     </div>
 
+    <!-- LOGO -->
+    <div class="logo-text">
+      <span class="logo-main">By Self-truth...</span>
+      <span class="logo-tagline">Unlock your inner voice</span>
+    </div>
+
+    <!-- NAV LINKS -->
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="services.html">Services</a></li>
       <li><a href="sessions.html">Sessions</a></li>
       <li><a href="pricing.html">Pricing</a></li>
-      <li><a href="contact.html" class="nav-btn">Contact</a></li>
+      <li><a href="contact.html" class="nav-btn active">Contact</a></li>
     </ul>
 
   </div>
@@ -219,6 +227,14 @@
 
   </div>
 </section>
+<script>
+  const toggle = document.getElementById("menuToggle");
+  const nav = document.querySelector(".nav-links");
+
+  toggle.addEventListener("click", () => {
+    nav.classList.toggle("active");
+  });
+</script>
 
 <footer class="footer">
   <p>© 2026 Self Truth Planet | All Rights Reserved</p>
